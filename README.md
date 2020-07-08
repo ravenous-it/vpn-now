@@ -9,14 +9,14 @@ It also makes it easy for a novice to get the requisite client configuration to 
 target device.
 
 Usage:
-   init_vpn.sh
+   init_vpn.sh:
      This command will install OpenVPN, set up a CA, create a server certificate,
 	 make required system configuration changes, generate a working OpenVPN
 	 configuration, and start the OpenVPN server.
 
 	 Note: This should only be run once.
 
-   vpn_client.sh
+   vpn_client.sh:
      This command will generate a client certificate and OpenVPN client configuration
 	 file (ovpn), then set up a temporary HTTPS server to allow the user to download
 	 the ovpn file on the intended device.
