@@ -8,16 +8,15 @@ These tools will build a self-contained VPN server and associated client configu
 It also makes it easy for a novice to get the requisite client configuration to the
 target device.
 
-Usage:
-   init_vpn.sh:
-     This command will install OpenVPN, set up a CA, create a server certificate,
-	 make required system configuration changes, generate a working OpenVPN
-	 configuration, and start the OpenVPN server.
+## Usage:
 
-	 Note: This should only be run once.
+### init_vpn.sh
 
-   vpn_client.sh:
-     This command will generate a client certificate and OpenVPN client configuration
-	 file (ovpn), then set up a temporary HTTPS server to allow the user to download
-	 the ovpn file on the intended device.
+This command will install OpenVPN, set up a CA, create a server certificate, make required system configuration changes, generate a working OpenVPN configuration, and start the OpenVPN server.
+
+Note: init_vpn.sh should only be run once.
+
+### vpn_client.sh
+
+This command will generate a client certificate and OpenVPN client configuration file (ovpn), then set up a temporary HTTPS server to allow the user to download the ovpn file on the intended device.
 
